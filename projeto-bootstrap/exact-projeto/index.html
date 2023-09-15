@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXACT-TIME</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- cdn do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- css do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!--nav bar  -->
+    <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Exact-Time</a>
+            <div id="navbar-items">
+                <div></div>
+                <form action="" class="d-flex" id="search-form">
+                    <i class="bi bi-search primary-color"></i>
+                    <input type=
+                    "search" class="form-control me-2" placeholder="Busque seu produto..." aria-label="Search">
+                    <button class="btn secondary-bg-color"> Pesquisar</button>
+                </form>
+
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="bi bi-person"></i>  
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="bi bi-heart"></i>  
+                        </a>
+                        <span class="qty-info">5</span>
+                    </li>
+
+                    
+                    <li class="nav-item" id="big-item">
+                        <a href="#" class="nav-link">
+                          <i class="bi bi-bag"></i>
+                          <b>R$ 1290,00</b>  
+                        </a>
+                        <span class="qty-info">8</span>
+                    </li>
+
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- botoom navbar -->
+    <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="
+            #bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="toggle navigation
+            ">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Produtos</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Promoções</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contatos</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <!-- fim da navbar -->
+
+    <!-- BANNERS -->
+
+    <div class="container" id="banners-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <!-- banner 01 -->
+                <div class="carousel-item active">
+                    <img src="img/banner1.jpg" alt="banner 01" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption primary-bg-color">
+                        <h5>Relógios de Luxo</h5>
+                        <p>
+                            Para você estar pronto em qualque situação.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- banner 02 -->
+
+                <div class="carousel-item ">
+                    <img src="img/banner3.jpg" alt="banner 03" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption primary-bg-color">
+                        <h5>Linha Importada</h5>
+                        <p>
+                            Conheça os melhores relógios suiços, com pronta entrega.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- botões de ir para trás e para frente -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+        </div>
+
+         <!-- mini banners -->
+
+         <div class="container" id="mini-banners">
+            <div class="row justify-content-around">
+                <!-- mini banner 1 -->
+                <div class="col-12 dark-bg-color" id="mini-banner01">
+                   <h2>Nova Coleção</h2> 
+                    <img src="img/relogio1.png" alt="relogio01">
+                    <a href="#">Compre Agora</a>
+                </div>
+
+                <!-- mini banner 2 -->
+
+                <div class="col-12 secondary-bg-color" id="mini-banner02">
+                    <h2>Promoções</h2> 
+                     <img src="img/relogio2.png" alt="relogio02">
+                     <a href="#">Compre Agora</a>
+                 </div>
+
+                 <!-- mini banner 3 
+                -->
+                <div class="col-12 light-bg-color" id="mini-banner03">
+                    <h2 class="secondary-color">Edição Ilimitada</h2> 
+                     <img src="img/relogio3.png" alt="relogio03">
+                     <a href="#">Compre Agora</a>
+                 </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- best sellers -->
+        <div class="container" id="best-sellers">
+          <h2 class="title primary-color"> Best Sellers</h2> 
+          <div class="row">
+        <!-- card 01 -->
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                   <img src="img/relogio1.png" alt="relogio01" class="card-img-top img-fluid">
+                     <div class="card-body">
+                        <p class="crad-category secondary-color"> Relógio</p>
+                        <h5 class="card-title">Nome do Produto</h5>
+                        <p class="card-text primary-color">
+                            R$177,65
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                     </div>
+                </div>
+            </div>
+
+            <!-- card 02 -->
+
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                   <img src="img/relogio8.png" alt="relogio01" class="card-img-top img-fluid">
+                     <div class="card-body">
+                        <p class="crad-category secondary-color"> Relógio</p>
+                        <h5 class="card-title ">Nome do Produto</h5>
+                        <p class="card-text primary-color">
+                            R$177,65
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                     </div>
+                </div>
+            </div>
+
+            <!-- card03 -->
+
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                   <img src="img/relogio5.png" alt="relogio05" class="card-img-top img-fluid">
+                     <div class="card-body">
+                        <p class="crad-category secondary-color"> Relógio</p>
+                        <h5 class="card-title">Nome do Produto</h5>
+                        <p class="card-text primary-color">
+                            R$177,65
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                     </div>
+                </div>
+            </div>
+
+            <!-- card04 -->
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                   <img src="img/relogio6.png" alt="relogio01" class="card-img-top img-fluid">
+                     <div class="card-body">
+                        <p class="crad-category secondary-color"> Relógio</p>
+                        <h5 class="card-title">Nome do Produto</h5>
+                        <p class="card-text primary-color">
+                            R$177,65
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                     </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- banner destaque -->
+        <div class="conatiner-fluid" id="bottom-banner">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <p class="primary-color offer-subtitle">Desconto de até 75%</p>
+                    <h2 class="light-color">Relógio X</h2>
+                    <p class="secondary-color">Presentei seu amor com este relógio luxuoso</p>
+                    <a href="#" class="btn btn-primary"> Compre Agora</a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/relogio7.png" alt="relogio x">
+                </div>
+            </div>
+        </div>
+
+        <!-- new produts -->
+
+        <div class="container" id="new-produtos">
+            <h2 class="title primary-color">Novidades</h2>
+            <div class="row">
+                <div class="col-12 col-md-3 d-none d-md-flex" id="new-produtos-banner">
+                    <p class="secondary-color">Os melhores</p>
+                    <h3>Relógios</h3>
+                    <p class="primary-color">Pelos melhores preços</p>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <!-- card 01 -->
+                        <div class="col-12 col-md-4">
+                            <div class="card primary-bg-color">
+                               <img src="img/relogio6.png" alt="relogio01" class="card-img-top img-fluid">
+                                 <div class="card-body">
+                                    <p class="crad-category secondary-color"> Relógio</p>
+                                    <h5 class="card-title">Nome do Produto</h5>
+                                    <p class="card-text primary-color">
+                                        R$177,65
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- card 02 -->
+                        <div class="col-12 col-md-4">
+                            <div class="card primary-bg-color">
+                               <img src="img/relogio1.png" alt="relogio01" class="card-img-top img-fluid">
+                                 <div class="card-body">
+                                    <p class="crad-category secondary-color"> Relógio</p>
+                                    <h5 class="card-title">Nome do Produto</h5>
+                                    <p class="card-text primary-color">
+                                        R$177,65
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- card 03 -->
+                        <div class="col-12 col-md-4">
+                            <div class="card primary-bg-color">
+                               <img src="img/relogio2.png" alt="relogio01" class="card-img-top img-fluid">
+                                 <div class="card-body">
+                                    <p class="crad-category secondary-color"> Relógio</p>
+                                    <h5 class="card-title">Nome do Produto</h5>
+                                    <p class="card-text primary-color">
+                                        R$177,65
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- card 04 -->
+                        <div class="col-12 col-md-4">
+                            <div class="card primary-bg-color">
+                               <img src="img/relogio5.png" alt="relogio01" class="card-img-top img-fluid">
+                                 <div class="card-body">
+                                    <p class="crad-category secondary-color"> Relógio</p>
+                                    <h5 class="card-title">Nome do Produto</h5>
+                                    <p class="card-text primary-color">
+                                        R$177,65
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- card05 -->
+                        <div class="col-12 col-md-4">
+                            <div class="card primary-bg-color">
+                               <img src="img/relogio3.png" alt="relogio01" class="card-img-top img-fluid">
+                                 <div class="card-body">
+                                    <p class="crad-category secondary-color"> Relógio</p>
+                                    <h5 class="card-title">Nome do Produto</h5>
+                                    <p class="card-text primary-color">
+                                        R$177,65
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- card 06 -->
+                        <div class="col-12 col-md-4">
+                            <div class="card primary-bg-color">
+                               <img src="img/relogio8.png" alt="relogio01" class="card-img-top img-fluid">
+                                 <div class="card-body">
+                                    <p class="crad-category secondary-color"> Relógio</p>
+                                    <h5 class="card-title">Nome do Produto</h5>
+                                    <p class="card-text primary-color">
+                                        R$177,65
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALERIA -->
+            <div class="container-fluid" id="gallery">
+                <div class="row">
+                    <div class="col-6 col-md-2 image-container" id="insta1"></div>
+            
+                    <div class="col-6 col-md-2 image-container" id="insta2"></div>
+
+                    <div class="col-6 col-md-2 image-container" id="insta3"></div>
+
+                    <div class="col-6 col-md-2 image-container" id="insta4"></div>
+                
+                    <div class="col-6 col-md-2 image-container" id="insta5"></div>
+
+                    <div class="col-6 col-md-2 image-container" id="insta6"></div>
+                </div>
+            </div>
+
+            <!-- rodapé -->
+            <div class="container-fluid" >
+               <div class="row">
+                <div class="col-12">
+                    <p class="text-center p-3">EXACT-TIME &copy;</p>
+                </div>
+               </div>
+            </div>
+
+            
+
+</body>
+</html>
